@@ -1,0 +1,125 @@
+/* Règles des exercices */
+
+/*  == TOC ==
+	Header
+	Boutons
+	Scoring
+*/
+
+.divQuiz {
+	margin:1em;
+}
+.question {
+	background: url(../img/quiz/question.jpg) top left no-repeat;
+	padding-left: 40px;
+	min-height: 50px;
+	margin: 0.6em 0 0.3em 0em;
+	font-style: italic;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+.collapse .question {
+	margin-bottom: 0em;
+}
+.question  p.el_txt_p{
+	color: #4164AB;
+	text-indent: 0;
+	padding-top: 10px;
+	margin: 0px 1em;
+}
+.question p .el_txt_is_em {
+	border-bottom: 2px solid #CBDDF5;
+	color: #4164AB;
+}
+.question .el_txt_ili p {
+	font-size:1em;
+	padding: 0px;
+	font-weight: normal;
+}
+
+
+
+/* Eval buttons */
+.btnStartE,
+.btnRestartE,
+.btnScoreE,
+.btnValidateE,
+.btnCloseE,
+.btnHomeE {
+	height: 33px;
+	display: inline;
+	padding-right: 35px;
+	margin-right: 35px;
+	color: #4958C2;
+	text-decoration: none;
+	margin: 0em 1.5em 0em 0em;
+	font-size: 18px;
+}
+a.btnStartE,
+a.btnValidateE,
+a.btnCloseE,
+a.btnHomeE {
+	background: url(../img/quiz/btn-entrer.gif) no-repeat right;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+a.btnStartE:hover,
+a.btnValidateE:hover,
+a.btnCloseE:hover,
+a.btnHomeE:hover {
+	-moz-opacity: 0.5;
+	filter: Alpha(opacity=50);
+	opacity: 0.5; 
+}
+a.btnRestartE {
+	background: url(../img/quiz/restartE.png) no-repeat right;
+}
+a.btnRestartE:hover {
+	-moz-opacity: 0.5;
+	filter: Alpha(opacity=50);
+	opacity: 0.5; 
+}
+a.btnScoreE {
+	background: url(../img/quiz/scoreE.png) no-repeat right;
+}
+a.btnScoreE:hover {
+	-moz-opacity: 0.5;
+	filter: Alpha(opacity=50);
+	opacity: 0.5; 
+}
+.closeE {
+	text-align: center;
+	font-size: 18px;
+	color: #4958C2;
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.btnHomeEFrm {
+	margin: 20px 0px;
+	text-align: center;
+}
+
+
+
+table.tableEvalHome {
+	margin: 1em 0 1em 0;
+}
+table.tableEvalHome td {
+	vertical-align: middle;
+}
+
+table.tableEvalHome p {
+	font-weight: bolder;
+	color: #4164AB;
+}
+
+/* Eval transformers */
+h1.evalSol_ti {
+	text-align: center;
+	margin-top: 1em;
+}
+
+div.evalSol_co {
+	padding: 0px 1em;
+}

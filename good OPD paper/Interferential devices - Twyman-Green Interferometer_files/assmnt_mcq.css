@@ -1,0 +1,84 @@
+/* ====== MCQ ====== */
+
+.choiceList {
+	margin-left: 1.5em;
+	margin-top: 0.5em;
+}
+
+.collapse .choiceList {
+	margin-top: 0.5em;
+	margin-bottom: 0em;
+	margin-left: 0em;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+}
+
+.label {
+	padding: 0px;
+	margin-bottom: 0px;
+	height: auto;
+	font-size: 1em;
+}
+.label p {
+	padding: 0 0 0 0;
+	text-indent: 0;
+	margin: 0 0 0 0;
+	line-height: normal;
+}
+
+.choice {
+	display: inline;
+	padding: 0px;
+	height: auto;
+}
+
+.choiceList_in {
+	vertical-align: top;
+	height: auto;
+	margin-right: 13px;
+	padding-right: 17px;
+
+}
+.choiceList_la {
+	padding-left: 5px;
+	height: auto;
+	margin-top: 1em;
+}
+
+td.choiceList_la p {
+	padding: 0 0 0 0.3em;
+	margin: -5px 0 1em 0;
+}
+
+.choiceList_in input {
+	vertical-align: top;
+	margin-top: -1px;
+}
+
+tr.choiceList_ch {
+	margin-bottom: 0.5em;
+}
+
+/* MCQ stylage des solutions */
+.assmntSolCheck .choiceList_in {
+ 	background-image: url(../img/quiz/boxchk.gif);
+	background-repeat: no-repeat;
+	background-position: top right;	
+}
+
+.assmntSolUnche .choiceList_in {
+	background-image: url(../img/quiz/boxunchk.gif);
+	background-repeat: no-repeat;
+	background-position: top right;
+}
+
+.assmntSolWrong td.choiceList_in {
+	background-image: url(../img/quiz/radiounchk.gif);
+	background-repeat: no-repeat;
+	background-position: top right ;
+}
+
+.assmntSolRight td.choiceList_in {
+	background-image: url(../img/quiz/radiochk.gif);
+	background-repeat: no-repeat;
+	background-position: top right ;
+}	

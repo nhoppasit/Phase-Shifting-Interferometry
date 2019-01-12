@@ -1,0 +1,557 @@
+/* Transformers' CSS*/
+
+/******************/
+/*    tooltips    */
+/******************/
+.tooltip_a {
+	cursor: pointer;
+}
+.ttSimple_a {
+	cursor: default;
+}
+.tooltip, .infoBtn_fra, .ttSimple{
+	border: 2px solid #7E99CC;
+	background-color: #eef4ff;
+}
+.tooltip_ti, .infoBtn_ti{
+	font-size: 14px;
+	font-weight: bold;
+	background-color: #7E99CC;
+	color:white;
+	position: relative;
+	padding: 0 16px 0 5px;
+	cursor: default;
+}
+.tooltip_x, .op_txt_tt_x, a.infoBtn_x, .op_labelTxt_tt_x{
+	background: url(../img/txt/cross2.png) top left no-repeat;
+	text-decoration: none;
+	display: block;
+	width: 16px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+a.infoBtn_x span{
+	display: none;
+}
+.ttSimple_co,.tooltip_co, .infoBtn_co{
+	padding: 4px 4px 0px 4px;
+}
+.ttSimple p,.tooltip p, .infoBtn_fra p{
+	text-align: left;
+	font-size: 0.9em;
+}
+
+
+/********************/
+/* Classes for Text */
+/********************/
+
+/* Weblink */
+a.op_txt_ul, a.op_sTxt_ul, a.op_labelTxt_ul, a.op_clozeTxt_ul, a.sfile_lnk{
+	text-decoration: none;
+	color: #7D98CB;
+	background: url(../img/txt/refLink.gif) no-repeat center right;
+	padding-right: 16px;
+}
+a.op_txt_ul:hover, a.op_sTxt_ul:hover, a.op_labelTxt_ul:hover, a.op_labelTxt_ul:hover, a.sfile_lnk:hover{
+	text-decoration: underline;
+	background: url(../img/txt/goLink.gif) no-repeat center right;
+}
+
+/* RefItem */
+span.op_txt_ul_acr, span.op_labelTxt_ul_acr, span.op_clozeTxt_ul_acr{
+	background: url(../img/txt/acr.gif) no-repeat center right;
+	padding-right: 12px;
+	color: #5a81c3;
+}
+span.op_txt_ul_glos, span.op_labelTxt_ul_glos, span.op_clozeTxt_ul_glos{
+	background: url(../img/txt/glos.gif) no-repeat center right;
+	padding-right: 12px;
+	color: #5a81c3;
+}
+span.op_txt_ul_bib, span.op_labelTxt_ul_bib, span.op_clozeTxt_ul_bib{
+	background: url(../img/txt/bib.gif) no-repeat center right;
+	padding-right: 12px;
+	color: #5a81c3;
+}
+span.op_txt_ul_ref, span.op_labelTxt_ul_ref, span.op_clozeTxt_ul_ref{
+	background: url(../img/txt/ref.gif) no-repeat center right;
+	padding-right: 10px;
+	color: #5a81c3;
+}
+.op_txt_ul_docLnk, .op_clozeTxt_ul_docLnk{
+	text-decoration: none;
+	background: url(../img/txt/note.gif) no-repeat center right;
+	padding-right: 12px;
+	color: gray;
+}
+.op_txt_ul_glos:hover, .op_labelTxt_ul_glos:hover, .op_clozeTxt_ul_glos:hover,
+.op_txt_ul_ref:hover, .op_labelTxt_ul_ref:hover, .op_clozeTxt_ul_ref:hover, .op_txt_ul_bib:hover, .op_labelTxt_ul_bib:hover, .op_clozeTxt_ul_bib:hover,
+.op_txt_ul_docLnk:hover, .op_clozeTxt_ul_docLnk:hover{
+	text-decoration: underline;
+}
+
+
+
+/* inlineStyles */
+.op_txt_is_emp, .op_sTxt_is_emp, .op_labelTxt_is_emp, .op_clozeTxt_is_emp{
+	font-weight: bold;
+	color: #0866EC;
+}
+.op_txt_is_vf, .op_sTxt_is_vf, .op_labelTxt_is_vf, .op_clozeTxt_is_vf{
+	font-style: italic;
+	color: #000000;
+}
+.op_txt_is_leg, .op_sTxt_is_leg, .op_labelTxt_is_leg, .op_clozeTxt_is_leg{
+	text-align: center;
+	color: #273747;
+}
+.op_clozeTxt_is_representative{
+	background-color: #0866EC;
+	color: white;
+	font-weight: bold;
+	padding: 0 3px 0 3px;
+}
+.op_txt_is_quote, .op_labelTxt_is_quote, .op_clozeTxt_is_quote{
+	font-style: italic;
+	color: gray;
+	font-family: "Times New Roman", Times, serif;
+}
+/* textLeafs */
+.op_txt_tl_exp, .op_labelTxt_tl_exp, .op_clozeTxt_tl_exp{
+	font-size: 70%;
+	vertical-align: 4px;
+}
+.op_txt_tl_ind, .op_labelTxt_tl_ind, .op_clozeTxt_tl_ind{
+	font-size:70%;
+	vertical-align: -4px;
+}
+.op_bibTxt_tl_auth{
+	font-weight: bold;
+	font-style: italic;
+}
+.op_bibTxt_tl_ed{
+	font-style: italic;
+	font-weight: normal;
+}
+.op_bibTxt_tl_date{
+	font-weight: bold;
+	font-style: normal;
+}
+span.op_listingTxt_tl_note{
+	font-style: italic;
+}
+
+/* imagesInline */
+.op_txt_tim_form img,
+.op_txt_tim_ico img {
+	border: none;
+	vertical-align: middle;
+}
+
+/* lists*/
+ol.op_txt_ol, ol.op_clozeTxt_ol {
+	color: #4061A3;
+	font-weight: bold;
+}
+ul.op_txt_il, ul.op_sTxt_il, ul.op_clozeTxt_il{
+	list-style-image: url(../img/txt/puce1.gif);
+}
+ul.op_txt_il ul, ul.op_sTxt_il ul, ul.op_clozeTxt_il ul{
+	list-style-image: url(../img/txt/puce2.gif);
+}
+ul.op_txt_il ul ul, ul.op_sTxt_il ul ul, ul.op_clozeTxt_il ul ul{
+	list-style-image: url(../img/txt/puce3.gif);
+}
+.op_txt_ili p, .op_sTxt_ili p, .op_clozeTxt_ili p, .op_txt_oli p, .op_sTxt_oli p, .op_clozeTxt_oli p{
+	margin-left: 0px;
+	color: black;
+	font-weight: normal;
+}
+
+/* listingTxt */
+.op_listingTxt_p{
+	margin: 0.3em 1em;
+	font-family: "Courier New", Courier, monospace;
+}
+
+
+
+/*************/
+/*  binaries */
+/*************/
+a.zoom{
+	text-decoration: none;
+	background: url(../img/txt/zoom.png) no-repeat center;
+	padding: 0px 10px;
+	margin-left: 5px;
+	font-size: 15px;
+}
+a.zoom:hover{
+	background: url(../img/txt/zoom_in.png) no-repeat center;
+}
+a.zoom span{
+	display: none;
+}
+.ttInfo_a{
+	text-decoration: none;
+	background: url(../img/txt/info.png) no-repeat center;
+	padding: 0px 10px;
+	margin-left: 0px;
+	font-size: 15px;
+}
+.ttInfo_a:hover{
+	background: url(../img/txt/info_over.png) no-repeat center;
+}
+.ttInfo_a span{
+	display: none;
+}
+
+.resInFlow{
+	text-align: center;
+	margin: 1em;
+}
+
+
+.resInFlow_ti{
+	color: gray;
+	font-style: italic;
+}
+
+.linkInFlow{
+	margin: 1em;
+}
+
+.simu{
+	margin-left: 10px;
+	background:url(../img/blocks/simuBig.gif) top left no-repeat;
+	padding-left:40px;
+	min-height:40px
+}
+.simu_ti{
+	text-align: left;
+	font-size:1.4em;
+}
+.simuLnkEweb, .simuLnkXmllab {
+	color:#7D98CB;
+	text-decoration: none;
+}
+.simuLnkEweb:hover, .simuLnkXmllab:hover {
+	text-decoration: underline;
+}
+
+.simu_co{
+	text-align: center;
+}
+.simuExp_closed, .simuExp_open{
+	color: gray;
+	text-align: left;
+	text-decoration: none;
+	font-size:1.1em;
+}
+.simuExp_closed{
+	background:url(../img/blocks/explicationSimu.gif) center left no-repeat;
+}
+.simuExp_open{
+	background:url(../img/blocks/explicationSimuOpened.gif) center left no-repeat;
+}
+
+.simuExp_ti{
+	padding-left:15px;
+}
+.simuExp_ti:hover{
+	text-decoration: underline;
+}
+.simuExp_co{
+	border-left: 2px solid #359632;
+	text-align: center;
+	margin-left:4px
+}
+.simuExp_co p{
+	font-size: 12px;
+	margin: 0px 5px 5px 5px;
+}
+
+
+/********************/
+/* Classes for blocks */
+/********************/
+
+.mainContent_ti{
+	font-size: 2em;
+	text-align: center;
+	margin: 1em;
+}
+
+.info{
+}
+.basic_ti, .legal_ti, .complement_ti, .method_ti, .syntax_ti, .simulation_ti,
+.remind_ti, .def_ti, .example_ti, .remark_ti, .advice_ti, .warning_ti,
+.obj_ti {
+	font-size: 1.5em;
+	color:#5a81c3;
+	height: 25px;
+	background-position: top right;
+	background-repeat: no-repeat;
+}
+.warning_ti{
+	color: #FF4F45;
+}
+.info_ti{
+	font-size: 1.4em;
+	color:#7D98CB;
+	padding: 5px 0px 0px 0px;
+}
+
+.basic, .legal, .complement, .method, .syntax, .simulation,
+.remind, .def, .example, .remark, .advice, .warning, .obj{
+	background-image:url(../img/blocks/shadow_bottom.gif);
+	background-position:center bottom;
+	background-repeat:repeat-x;
+	padding-bottom:8px;
+	margin: 1.3em 1em 1.3em 1em;
+}
+.blocks_co, .obj_co{
+background-color:#EDF2F9;
+border:2px solid #7D98CB;
+}
+.warning .blocks_co{
+	border: 2px solid #FF4F45;
+	background-color: #FFCFCC;
+}
+.warning ul.op_txt_il{
+	list-style-image: url(../img/txt/puce1Red.gif);
+}
+.warning ul.op_txt_il ul{
+	list-style-image: url(../img/txt/puce2Red.gif);
+}
+.warning ul.op_txt_il ul ul{
+	list-style-image: url(../img/txt/puce3Red.gif);
+}
+.warning .op_txt_is_emp{
+	color: red;
+}
+.basic_ti{
+	background-image: url(../img/blocks/fondamentaux.gif);
+	min-height: 27px;
+}
+.legal_ti{
+	background-image: url(../img/blocks/textelegal.gif);
+	min-height: 30px;
+}
+.complement_ti{
+	background-image: url(../img/blocks/complement.gif);
+	min-height: 30px;
+}
+.method_ti{
+	background-image: url(../img/blocks/outilmethodo.gif);
+	min-height: 33px;
+}
+.syntax_ti{
+	background-image: url(../img/blocks/syntaxe.gif);
+	min-height: 34px;
+}
+.simulation_ti{
+	background-image: url(../img/blocks/simul.png);
+	min-height: 29px;
+}
+.advice_ti{
+	background-image: url(../img/blocks/conseil.gif);
+	min-height: 30px;
+}
+.def_ti{
+	background-image: url(../img/blocks/definition.gif);
+	min-height: 30px;
+}
+.example_ti{
+	background-image: url(../img/blocks/exemple.gif);
+	min-height: 25px;
+}
+.remark_ti{
+	background-image: url(../img/blocks/remarque.gif);
+	min-height: 30px;
+}
+.remind_ti{
+	background-image: url(../img/blocks/rappel.gif);
+	min-height: 25px;
+}
+.warning_ti{
+	background-image: url(../img/blocks/attention.gif);
+	min-height: 30px;
+}
+.obj_ti{
+	background: url(../img/blocks/obj.png) top left no-repeat;
+}
+.expUcDiv_co{
+	padding-left: 2em;
+}
+.collapse{
+	background: url(../img/blocks/topleft.jpg) top left no-repeat;
+	border: 2px solid #D6E2F1;
+	margin: 1em 1em 1em 1em;
+}
+.collapse_open{
+	background: url(../img/blocks/plus.png) top left no-repeat;
+}
+.collapse_closed{
+background: url(../img/blocks/minus.png) top left no-repeat;
+margin-bottom: 1em;
+}
+.collapse_ti{
+	font-size: 1.5em;
+	font-weight: bold;
+	color:#728CB0;
+	padding-left: 35px;
+}
+.collapse_tiIn{
+}
+.collapse_co{
+background: url(../img/blocks/bottomright.jpg) bottom right no-repeat;
+padding: 1em 1em 1em 1em;
+}
+.collapse_closed .a{
+background: url(../img/blocks/bottomright.jpg) bottom right no-repeat;
+}
+.collapse a{
+	text-decoration: none;
+}
+
+
+.objBox{
+	margin: 20px 10%;
+	padding: 10px;
+	border: 2px solid #7D98CB;
+	background-color: #DCE3F3;
+}
+.objBox_ti{
+	font-weight: bold;
+	color:#7D98CB;
+}
+.objBoxIn{
+	padding: 10px;
+}
+
+
+.quest{
+	background-color:#EDF2F9;
+	border:2px solid #7D98CB;
+	margin: 20px 0px;
+}
+
+/***************************************/
+/* Classes for Images and Ressources */
+/***************************************/
+.captionImg{
+	text-align: center;
+	margin-bottom: 2em;
+}
+.captionImg_ti{
+	font-family: "Times New Roman", Times, serif;
+	color: gray;
+	min-height: 20px;
+	font-size: 1.1em;
+}
+.captionImg_ti p{
+	text-align: center;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+.captionImg_co a, .captionImg_co img{
+	text-decoration: none;
+	border: none;
+}
+.op_resM_label{
+}
+.op_resM_title{
+	background: url(../img/blocks/captionImg_small.png) no-repeat top left;
+	padding-left: 22px;
+	text-decoration: underline;
+	margin-right: 1em;
+}
+.op_resM_author, .op_resM_date{
+	margin-right: 0.5em;
+}
+.op_resM_desc{
+	font-style: italic;
+}
+
+
+
+
+/*****************/
+/*   Metadata    */
+/*****************/
+p.mField{
+	background: url(../img/txt/puce2.gif) no-repeat top left;
+	padding-left: 16px;
+	margin: 4px 0px 4px 0px;
+}
+
+.mField_ti{
+	font-weight: bold;
+	color: #7D98CB;
+	margin-top: 5px;
+}
+.mDiv{
+	padding-left: 16px;
+	background: url(../img/txt/puce2.gif) no-repeat top left;
+}
+.mDiv p{
+	margin: 4px 0px 4px 0px;
+}
+.mDiv_ti{
+	font-weight: bold;
+	color: #7D98CB;
+}
+
+
+
+
+/****************/
+/*     Deco     */
+/****************/
+.decoUe, .decoUeDiv, .decoIntro, .decoConclu, .decoQuest, .decoAssmntUa, .decoCourseUa, .decoExpUc, .decoPractUc, .decoTrainUc{
+	width: 130px;
+	height: 110px;
+}
+.decoIntro{
+	/*background: url(../img/deco/introIco.png) center center no-repeat;*/
+	background: url(../img/deco/logo-cahier.gif) center center no-repeat;
+}
+.decoConclu{
+	/*background: url(../img/deco/concluIco.png) center center no-repeat;*/
+	background: url(../img/deco/logo-cahier.gif) center center no-repeat;
+}
+.decoAssmntUa{
+	/*background: url(../img/deco/assmntUaIco.png) center center no-repeat;*/
+	background: url(../img/deco/logo-crayon.gif) center center no-repeat;
+}
+.decoCourseUa{
+	/*background: url(../img/deco/courseUaIco.png) center center no-repeat;*/
+	background: url(../img/deco/logo-cahier.gif) center center no-repeat;
+}
+.decoExpUc{
+	/*background: url(../img/deco/expUcIco.png) center center no-repeat;*/
+	background: url(../img/deco/logo-crayon.gif) center center no-repeat;
+}
+.decoQuest{
+	/*background: url(../img/deco/questIco.png) center center no-repeat;*/
+	background: url(../img/deco/logo-crayon.gif) center center no-repeat;
+}
+.decoPractUc{
+	/*background: url(../img/deco/practUcIco.png) center center no-repeat;*/
+	background: url(../img/deco/logo-cahier.gif) center center no-repeat;
+}
+.decoTrainUc{
+	/*background: url(../img/deco/trainUcIco.png) center center no-repeat;*/
+	background: url(../img/deco/logo-crayon.gif) center center no-repeat;
+}
+.decoUe{
+	/*background: url(../img/deco/ueIco.png) center center no-repeat;*/
+	background: url(../img/deco/logo-cahier.gif) center center no-repeat;
+}
+.decoUeDiv{
+	/*background: url(../img/deco/ueDivIco.png) center center no-repeat;*/
+	background: url(../img/deco/logo-cahier.gif) center center no-repeat;
+}

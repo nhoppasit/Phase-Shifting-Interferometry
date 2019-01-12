@@ -1,0 +1,576 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0078)http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Contenu_31.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Interferential devices - Twyman-Green Interferometer</title>
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="expires" name="Expires" content="Fri, 01 Jan 1990 00:00:00 GMT">
+<meta http-equiv="Content-Style-Type" content="text/css">
+
+
+
+<script type="text/JavaScript">
+/*0*/ var scServices = {};
+/*1*/ scServices["scLoad"] = {loadFromRoot:function(pUrl){window.location.href="../"+pUrl;}, getUrlFromRoot:function(pHref){if(!this.fRootOffset) this.fRootOffset = window.location.href.length + 1 - 19; return pHref.substring(this.fRootOffset);}};
+</script>
+
+<script type="text/JavaScript" src="./Interferential devices - Twyman-Green Interferometer_files/scCoLib.js"></script>
+<script type="text/JavaScript" src="./Interferential devices - Twyman-Green Interferometer_files/scTiLib.js"></script>
+<script type="text/JavaScript" src="./Interferential devices - Twyman-Green Interferometer_files/scSiLib.js"></script>
+<script type="text/JavaScript" src="./Interferential devices - Twyman-Green Interferometer_files/scPaLib.js"></script>
+<script type="text/JavaScript" src="./Interferential devices - Twyman-Green Interferometer_files/scorm.js"></script>
+<script type="text/JavaScript" src="./Interferential devices - Twyman-Green Interferometer_files/scTooltipMgr.js"></script>
+<script type="text/JavaScript" src="./Interferential devices - Twyman-Green Interferometer_files/scDragMgr.js"></script>
+<script type="text/JavaScript" src="./Interferential devices - Twyman-Green Interferometer_files/scDynUiMgr.js"></script>
+<script type="text/JavaScript" src="./Interferential devices - Twyman-Green Interferometer_files/dynSizes.js"></script>
+<script type="text/JavaScript">
+/*0*/ if(window.opener && window.opener.scServices) scServices = window.opener.scServices; if(window.parent && window.parent.scServices) scServices = window.parent.scServices; 
+</script>
+
+<meta name="generator" content="Scenari - http://scenari-platform.org"><script type="text/javascript">var courseMemorizer = {
+ pathToolBtn : "ide:tplLft/des:.toolsBtn",
+ memorize : function(){
+ document.cookie = "courseUrl="+escape(document.location.href);
+ },
+ onLoad : function() {
+ var vToolBtn = scPaLib.findNode(this.pathToolBtn);
+ if(vToolBtn) vToolBtn.onclick=this.memorize;
+ },
+ loadSortKey : "ZZ"
+}
+scOnLoads[scOnLoads.length] = courseMemorizer;</script><script type="text/javascript">new scSiRuleAutoMarginW("tplCoMarginW", "ide:tplCo", true, 510, 100);
+new scSiRuleFlexH("tplCoFlexTop", "ide:tplCo", true, .3);</script><link href="./Interferential devices - Twyman-Green Interferometer_files/html.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/struct_page.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/buttons.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/mnu_page.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/mnu_child.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/transf.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/indexes.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/assmnt.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/assmnt_edit.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/assmnt_mcq.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/assmnt_mlq.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/assmnt_train.css" rel="stylesheet" type="text/css">
+<link href="./Interferential devices - Twyman-Green Interferometer_files/sub_windows.css" rel="stylesheet" type="text/css">
+<!--[if lt IE 7]>
+<link href="../styles/ie6_page.css" rel="stylesheet" type="text/css">
+<link href="../styles/ie6_sub_windows.css" rel="stylesheet" type="text/css">
+<![endif]-->
+</head>
+<body>
+<div id="tplFra"><div id="tplTop"><div id="titleRoot"><span>Interferential devices</span></div></div><div id="tplLft"></div><div id="tplMain"><a href="http://www.optique-ingenieur.org/" target="_blank" id="logo"><span><img alt="" src="./Interferential devices - Twyman-Green Interferometer_files/logo.gif" id="logo"></span></a><div id="tplMnu" style="display: none;"><div id="mnuFrmUp" onclick="menuScrollTiTask.fSpeed-=2;" onmouseover="if(menuScrollTiTask.fSpeed&gt;=0) {menuScrollTiTask.fSpeed=-2; scTiLib.addTaskNow(menuScrollTiTask);}" onmouseout="menuScrollTiTask.fSpeed=0;" class=" btnOff"><span id="mnuFrmUpLeft"><a id="mnuBtnUp" href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Contenu_31.html#" onclick="menuScrollTiTask.step(-20); return false;"></a></span><span id="mnuFrmUpCenter"></span><span id="mnuFrmUpRight"></span></div><div class="mnuBlock"></div><div id="mnuScroll"><ul class=" sw_menu_navList"><li class=""><a href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Cours_M02C05.html" target="_self" class=" mnu_sel_no mnu_l mnu_ueDiv"><span><span class="mnu_cursor"></span>Lesson</span></a></li><li class=""><a href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Cours_M02C05_5.html" target="_self" class=" mnu_sel_no mnu_b mnu_ueDiv"><span><span class="mnu_cursor"></span>Case study</span></a><ul><li class=""><a href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Cours_M02C05_10.html" target="_self" class=" mnu_sel_no mnu_l mnu_intro"><span><span class="mnu_cursor"></span>Introduction</span></a></li><li class=""><span class=" mnu_sel_yes mnu_l mnu_expUc" id="i0"><span><span class="mnu_cursor"></span>Twyman-Green Interferometer</span></span></li><li class=""><a href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Contenu_32.html" target="_self" class=" mnu_sel_no mnu_l mnu_expUc"><span><span class="mnu_cursor"></span>Spectrometry by Fourier transform</span></a></li><li class=""><a href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Contenu_33.html" target="_self" class=" mnu_sel_no mnu_l mnu_expUc"><span><span class="mnu_cursor"></span>Fabry-Perot Spectrometry</span></a></li></ul></li><li class=""><a href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Cours_M02C05_6.html" target="_self" class=" mnu_sel_no mnu_l mnu_ueDiv"><span><span class="mnu_cursor"></span>Exercices</span></a></li></ul></div><div id="mnuFrmDown" onclick="menuScrollTiTask.fSpeed+=2;" onmouseover="if(menuScrollTiTask.fSpeed&lt;=0) {menuScrollTiTask.fSpeed=2; scTiLib.addTaskNow(menuScrollTiTask);}" onmouseout="menuScrollTiTask.fSpeed=0;" class=" "><span id="mnuFrmDownLeft"><a id="mnuBtnDown" href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Contenu_31.html#" onclick="menuScrollTiTask.step(20); return false;"></a></span><span id="mnuFrmDownCenter"></span><span id="mnuFrmDownRight"></span></div><script type="text/javascript">new ScSiRuleEnsureVisible("i0", "ide:mnuScroll");</script><div id="tplMnuOpenedCo"><a id="mnuBtnCollapse" href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Contenu_31.html#" onclick="menuCollapser.collapseM(); return false;"></a></div><div id="tplIco"><div class=" decoExpUc"></div></div></div><div id="tplMnuClosed" style=""><div id="tplMnuClosedCo"><a id="tplBtnOpenMenu" href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Contenu_31.html#" onclick="menuCollapser.openM(); return false;"></a></div></div><div id="tplCo" style="left: 15px;"><div id="tplCoMarginW" style="margin-left: 0px; margin-right: 0px;"><div id="tplCoFlexTop" style=""></div><div class=" mainContent"><h1 class=" mainContent_ti"><span>Twyman-Green Interferometer</span></h1><div class=" mainContent_co">
+				<div class=" info">
+						
+								<p class="op_txt_p">The Twyman Green interferometer is a variant of the Michelson interferometer. It is used industrially for the interferometric control of non-plane optical surfaces and mirrors or lens objectives. Figure 22 presents the Twyman-Green device. </p>
+							
+						<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_22_1.jpg" alt="
+   
+    Figure 22 : Twyman Green Interferometer 
+   
+  " width="494" height="302"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 22&nbsp;: Twyman Green Interferometer 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_22_2.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+						
+								<p class="op_txt_p">The Michelson plane mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_001.png" alt="">
+</span>is replaced by a combination of the optical system to study and a spherical mirror. The spherical mirror is placed for its curvature center  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_002.png" alt="">
+</span> to be confounded with the paraxial focus of the optical system <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_003.png" alt="">
+</span>. Back and forth in the interferometer, the fringes are visible on the screen that is now replaced by a rotating ground-glass. The optical imagery system creates the fringes image on the <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_004.png" alt="">
+</span> or <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_005.png" alt="">
+</span>matrix detector.  If the ground-glass were static, it would generate a<span class="op_txt_is_emp"> speckle</span> (random phenomenon) that would jam the interference fringes. Thus, the ground-glass is usually assembled on a motor that makes it rotate fast enough for the speckle to be averaged in the integration time of the image sensor so that the speckle grains are no longer visible anymore on the fringes' image. </p>
+							
+						
+								<p class="op_txt_p">Reference plane mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_006.png" alt="">
+</span> is assembled on a piezoelectric transducer which makes it possible to translate  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_007.png" alt="">
+</span> and to apply the phase shift method in order to calculate the interferences optical phase. This interferometer aspect will not be detailed here but the reader is encouraged to look at the “<span class="op_txt_is_emp">Interferometry and fringes demodulation</span>” class. </p>
+							
+						
+								<p class="op_txt_p">Plane wave surface  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_008.png" alt="">
+</span> stemming from the laser is split into two plane wave surfaces  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_009.png" alt="">
+</span> and <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_010.png" alt="">
+</span>. Back and forth on mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_011.png" alt="">
+</span>, reference wave surface  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_012.png" alt="">
+</span> remains flat, but it can possibly be sloped by a tilt of mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_011.png" alt="">
+</span>. Object wave surface  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_013.png" alt="">
+</span> is transformed into a spherical wave by the optical system, if it is perfect, then by reflection on the spherical mirror and back in the optical system, it is flat again. Interferences between the ideal plane wave surface stemming back and forth from mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_011.png" alt="">
+</span> and the wave surface made by the back and forth movement in the optical system occur at the interferometer output. The interference fringes analysis makes it possible to quantify the defect introduced by the optical system. </p>
+							
+					</div>
+			<div class=" expUcDiv"><h2 class=" expUcDiv_ti"><span>Optic component aberration</span></h2><div class=" expUcDiv_co">
+						<div class=" info">
+								
+										<p class="op_txt_p">If the optical system tested is perfect then the wave surface stemming from the system-mirror 2 back and forth movement is flat. In the opposite case, it has “<span class="op_txt_is_emp">aberration</span>” due to the optical system [<span class="op_txt_ul_bib tooltip_a" id="i1" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Daniel Malacara&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Optical shop testing&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;&amp;Eacute;ditions Wiley Interscience&lt;\/span&gt;, New York, 1992, 2&amp;egrave;me &amp;Eacute;dition&lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[4]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[4]...">4</span>.<span class="op_txt_ul_bib tooltip_a" id="i2" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Max Born, Emil Wolf&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Principle of Optics, 7&amp;egrave;me Edition&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;Cambridge University Press&lt;\/span&gt;, Cambridge, &lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;1999&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[5]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[5]...">5</span>]. If the optical system is aberrant then the wave surface at the system output is not spherical but has a standard deviation aberration that is the difference between the real wave surface and the ideal spherical wave surface (see figure 23). </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_23.jpg" alt="
+   
+    Figure 23 :Standard deviation aberration of the optical system 
+   
+  " width="498" height="233"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 23&nbsp;:Standard deviation aberration of the optical system 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_23_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">The standard deviation aberration depends on the aberration type of the component. A Twyman-Green interferometer easily highlights the following primary aberrations [<span class="op_txt_ul_bib tooltip_a" id="i3" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Daniel Malacara&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Optical shop testing&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;&amp;Eacute;ditions Wiley Interscience&lt;\/span&gt;, New York, 1992, 2&amp;egrave;me &amp;Eacute;dition&lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[4]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[4]...">4</span>.<span class="op_txt_ul_bib tooltip_a" id="i4" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Max Born, Emil Wolf&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Principle of Optics, 7&amp;egrave;me Edition&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;Cambridge University Press&lt;\/span&gt;, Cambridge, &lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;1999&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[5]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[5]...">5</span>]: </p>
+									
+								
+										<p class="op_txt_p">
+											<span class="op_txt_is_emp">Third-order spherical aberration </span>
+										</p>
+									
+								
+										<p class="op_txt_p">
+											<span class="op_txt_is_emp">Third-order coma aberration </span>
+										</p>
+									
+								
+										<p class="op_txt_p">
+											<span class="op_txt_is_emp">Third-order astigmatism aberration </span>
+										</p>
+									
+								
+										<p class="op_txt_p">The analytic expression of the standard deviation is given in the following examples. </p>
+									
+							</div>
+						<div class=" remind"><div class="remind_ti"></div><div class=" blocks_co">
+								
+										<p class="op_txt_p">The standard deviation always refers to the difference between the real wave surface and the reference surface that can be either flat or spherical. </p>
+									
+							</div></div>
+					</div></div><div class=" expUcDiv"><h2 class=" expUcDiv_ti"><span>Contribution of both mirrors</span></h2><div class=" expUcDiv_co">
+						<div class=" info">
+								
+										<p class="op_txt_p">The reference arm is compounded of plane mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_011.png" alt="">
+</span> assembled on the piezoelectric transducer. A priori, the reflected front that interferes with the measuring wavefront is flat but it may be sloped in relation to the ideal plane. That inclination can be made by a tilting of mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_011.png" alt="">
+</span>.The reader can observe that the same thing occurs with a tilting of mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_014.png" alt="">
+</span>. If mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_011.png" alt="">
+</span> is slightly translated by the  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_015.png" alt="">
+</span> then a uniform phase shift of all the reference wavefront points will occur.  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_020.png" alt="">
+</span> will be the wavefront standard deviation stemming from the reference arm  (<span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_021.png" alt="">
+</span>, back and forth). </p>
+									
+								
+										<p class="op_txt_p">In the measurement arm, mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_014.png" alt="">
+</span> can be longitudinally tilted or translated. Mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_014.png" alt="">
+</span>  longitudinal translation on each side of the optical system paraxial focus will create a <span class="op_txt_is_emp">defocusing</span> thus a contribution of the mirror to the standard deviation aberration of the optical system-mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_014.png" alt="">
+</span>set will be observed. It is also referred as “<span class="op_txt_is_emp">focusing defect</span>”. </p>
+									
+							</div>
+					</div></div><div class=" expUcDiv"><h2 class=" expUcDiv_ti"><span>General expression of the interferogram</span></h2><div class=" expUcDiv_co">
+						<div class=" info">
+								
+										<p class="op_txt_p">Let us suppose that the arms polarizations are parallel so the interferogram is written: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="320.166015625" height="47.982547760009766"><param name="src" value="../res/K_Eq_ext_01.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_01.swf" width="320.166015625" height="47.982547760009766"></object></div></div>
+								
+										<p class="op_txt_p">Where&nbsp;:</p>
+									
+								
+										<ul class="op_txt_il">
+											<li class="op_txt_ili">
+												<p class="op_txt_p">
+													<span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_018.png" alt="">
+</span>  is the wavefront standard deviation stemming from the measurement arm (optical system+ <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_019.png" alt="">
+</span>, back and forth), </p>
+											</li>
+										</ul>
+										<ul class="op_txt_il">
+											<li class="op_txt_ili">
+												<p class="op_txt_p">
+													<span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_020.png" alt="">
+</span>  is the wavefront standard deviation stemming from the reference arm  (<span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_021.png" alt="">
+</span>, moving back and forth), </p>
+											</li>
+										</ul>
+										<ul class="op_txt_il">
+											<li class="op_txt_ili">
+												<p class="op_txt_p">
+													<span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_017.png" alt="">
+</span>  is the optical phase that corresponds to the total difference of optical path between both interferometer paths, assessed at the images sensor level. </p>
+											</li>
+										</ul>
+									
+								
+										<p class="op_txt_p">According to the contributions given by the various elements, the interferometer fringes will have different shapes. </p>
+									
+								
+										<p class="op_txt_p">In the following development, we suppose that  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_022.png" alt="">
+</span>, that is to say that the fringes have a maximal contrast equal to 1. </p>
+									
+							</div>
+					</div></div><div class=" expUcDiv"><h2 class=" expUcDiv_ti"><span>Interferogram with a perfect optical system</span></h2><div class=" expUcDiv_co">
+						<div class=" info">
+								
+										<p class="op_txt_p">Let us consider that everything is perfect: optical system, mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_011.png" alt="">
+</span>perpendicular to the optical axis and mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_014.png" alt="">
+</span> perpendicular to the axis and not unfocused. So the contributions standard deviation are <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_023.png" alt="">
+</span>, the interferogram is: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="148.98728942871094" height="27.781600952148438"><param name="src" value="../res/K_Eq_ext_02.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_02.swf" width="148.98728942871094" height="27.781600952148438"></object></div></div>
+								
+										<p class="op_txt_p">There is no fringe but “<span class="op_txt_is_emp">a dull colour</span>”. </p>
+									
+								
+										<p class="op_txt_p">As we said it before, the same thing will happen with a tilting of mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_011.png" alt="">
+</span> or <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_014.png" alt="">
+</span> : a wavefront tilt at the output. Let us suppose that the tilting is caused by mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_011.png" alt="">
+</span>.  In terms of deviation that wavefront tilt results in the equation a plane so that: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="253.16830444335938" height="25.28295135498047"><param name="src" value="../res/K_Eq_ext_03.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_03.swf" width="253.16830444335938" height="25.28295135498047"></object></div></div>
+								
+										<p class="op_txt_p">where <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_024.png" alt="">
+</span> are the mirror tilting angles respectively in directions  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_025.png" alt="">
+</span>. So the interferogram has straight fringes as illustrated on Figure 12. </p>
+									
+								
+										<p class="op_txt_p">Let us consider now that mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span>is also slightly defocused by a translation   <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/Eq_int_207.png" alt="">
+</span> along the optical axis. The standard deviation caused by that defocusing is written [<span class="op_txt_ul_bib tooltip_a" id="i5" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Daniel Malacara&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Optical shop testing&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;&amp;Eacute;ditions Wiley Interscience&lt;\/span&gt;, New York, 1992, 2&amp;egrave;me &amp;Eacute;dition&lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[4]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[4]...">4</span>.<span class="op_txt_ul_bib tooltip_a" id="i6" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Max Born, Emil Wolf&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Principle of Optics, 7&amp;egrave;me Edition&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;Cambridge University Press&lt;\/span&gt;, Cambridge, &lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;1999&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[5]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[5]...">5</span>]: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="150.173095703125" height="48.5754508972168"><param name="src" value="../res/K_Eq_ext_04.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_04.swf" width="150.173095703125" height="48.5754508972168"></object></div></div>
+								
+										<p class="op_txt_p"> The notes are illustrated on Figure 24. </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_24.jpg" alt="
+   
+    Figure 24 : Notations for the standard interval 
+   
+  " width="494" height="212"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 24&nbsp;: Notations for the standard interval 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_24_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">Figure 25 illustrates the wavefront shape and the interferogram obtained with the mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span>defocusing.</p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_25.jpg" alt="
+   
+    Figure 25 : Defocusing standard interval and interferogram 
+   
+  " width="499" height="258"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 25&nbsp;: Defocusing standard interval and interferogram 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_25_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+							</div>
+					</div></div><div class=" expUcDiv"><h2 class=" expUcDiv_ti"><span>Interferogram with third-order spherical aberration</span></h2><div class=" expUcDiv_co">
+						<div class=" info">
+								
+										<p class="op_txt_p">The spherical aberration is an <span class="op_txt_is_emp">aperture aberration</span>, that is to say it appears for a image point located on the imager system optical axis whose aperture diameter is wide (numerical aperture wider than 0.35). In the case where the optical system has third-order spherical aberration, the standard deviation is expressed by the following relation [<span class="op_txt_ul_bib tooltip_a" id="i7" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Daniel Malacara&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Optical shop testing&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;&amp;Eacute;ditions Wiley Interscience&lt;\/span&gt;, New York, 1992, 2&amp;egrave;me &amp;Eacute;dition&lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[4]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[4]...">4</span>.<span class="op_txt_ul_bib tooltip_a" id="i8" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Max Born, Emil Wolf&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Principle of Optics, 7&amp;egrave;me Edition&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;Cambridge University Press&lt;\/span&gt;, Cambridge, &lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;1999&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[5]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[5]...">5</span>]: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="186.72116088867188" height="54.37739944458008"><param name="src" value="../res/K_Eq_ext_05.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_05.swf" width="186.72116088867188" height="54.37739944458008"></object></div></div>
+								
+										<p class="op_txt_p">Where  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_026.png" alt="">
+</span> is the coefficient of the third-order spherical aberration. </p>
+									
+								
+										<p class="op_txt_p">Figure 26 illustrates the wavefront shape and the interferogram with third-order spherical aberration. </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_26.jpg" alt="
+   
+    Figure 26 : Standard interval of a third-order spherical aberration 
+   
+  " width="499" height="252"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 26&nbsp;: Standard interval of a third-order spherical aberration 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_26_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">If mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_027.png" alt="">
+</span> is now tilted, the wavefronts difference at the interferometer output becomes: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="446.3690185546875" height="54.37739944458008"><param name="src" value="../res/K_Eq_ext_06.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_06.swf" width="446.3690185546875" height="54.37739944458008"></object></div></div>
+								
+										<p class="op_txt_p">Figure 27 illustrates the wavefront shape and the interferogram with third-order spherical aberration and a tilting of mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_027.png" alt="">
+</span>.</p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_27.jpg" alt="
+   
+    Figure 27 : Standard interval of a third-order spherical aberration and a tilting of M1 
+   
+  " width="500" height="247"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 27&nbsp;: Standard interval of a third-order spherical aberration and a tilting of M1 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_27_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">In the case mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span> is slightly defocused, the wavefronts difference at the interferogram output becomes: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="343.4161682128906" height="54.37739944458008"><param name="src" value="../res/K_Eq_ext_07.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_07.swf" width="343.4161682128906" height="54.37739944458008"></object></div></div>
+								
+										<p class="op_txt_p">Figure 28 illustrates the wavefront shape and the interferogram with third-order spherical aberration and a defocusing of mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span>.</p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_28.jpg" alt="
+   
+    Figure 28 : Standard interval with third-order spherical aberration and M2 focusing failure 
+   
+  " width="497" height="251"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 28&nbsp;: Standard interval with third-order spherical aberration and M2 focusing failure 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_28_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+							</div>
+					</div></div><div class=" expUcDiv"><h2 class=" expUcDiv_ti"><span>Interferogram with third-order coma aberration</span></h2><div class=" expUcDiv_co">
+						<div class=" info">
+								
+										<p class="op_txt_p">The coma aberration is a<span class="op_txt_is_emp"> field and aperture aberration</span>, that is to say it appears away from the axis. In Figure 22, the configuration it is not possible to highlight the coma. The assembly must be adapted in order to simulate an extended image <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_029.png" alt="">
+</span>.  The optical system must be turned to an angle  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_030.png" alt="">
+</span>. Thus the parallel to the interferometer axis beams all converge towards image point  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_031.png" alt="">
+</span>, that can be confounded with mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span> curvature center and the bottom of the image , <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_032.png" alt="">
+</span>, as it is located in the system paraxial focus. The image size is  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_033.png" alt="">
+</span>. The coma standard deviation is expressed by the following relation [<span class="op_txt_ul_bib tooltip_a" id="i9" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Daniel Malacara&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Optical shop testing&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;&amp;Eacute;ditions Wiley Interscience&lt;\/span&gt;, New York, 1992, 2&amp;egrave;me &amp;Eacute;dition&lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[4]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[4]...">4</span>.<span class="op_txt_ul_bib tooltip_a" id="i10" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Max Born, Emil Wolf&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Principle of Optics, 7&amp;egrave;me Edition&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;Cambridge University Press&lt;\/span&gt;, Cambridge, &lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;1999&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[5]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[5]...">5</span>]: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="212.93580627441406" height="50.904701232910156"><param name="src" value="../res/K_Eq_ext_08.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_08.swf" width="212.93580627441406" height="50.904701232910156"></object></div></div>
+								
+										<p class="op_txt_p">Where <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_034.png" alt="">
+</span> is the third-order coma aberration coefficient. </p>
+									
+								
+										<p class="op_txt_p">Figure 29 shows the experimental configuration for the coma measurement. </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_29.jpg" alt="
+   
+    Figure 29 : Configuration for the coma measurement 
+   
+  " width="494" height="302"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 29&nbsp;: Configuration for the coma measurement 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_29_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">Figure 30 illustrates the wavefront shape and the interferogram with third-order coma aberration. The initial configuration is done in the case where the paraxial image is confounded with the  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span>&nbsp;curvature center: we can also move the curvature center in the coma blur and study the aberration. That move will be done by tilting the mirror<span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span>.</p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_30.jpg" alt="
+   
+    Figure 30 : Standard interval of third-order coma aberration 
+   
+  " width="499" height="239"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 30&nbsp;: Standard interval of third-order coma aberration 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_30_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">With a tilting of  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span>to put  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_035.png" alt="">
+</span> out of the coma blur, the aberration wavefront becomes: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="303.0142517089844" height="50.904701232910156"><param name="src" value="../res/K_Eq_ext_09.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_09.swf" width="303.0142517089844" height="50.904701232910156"></object></div></div>
+								
+										<p class="op_txt_p">Figure 31 illustrates this case. </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_31.jpg" alt="
+   
+    Figure 31 : Standard deviation with third-order coma aberration and a tilting of M2 (C outside of the coma blur) 
+   
+  " width="496" height="236"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 31&nbsp;: Standard deviation with third-order coma aberration and a tilting of M2 (C outside of the coma blur) 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_31_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">Figure 32 shows the standard deviation and the interferogram obtained when <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_035.png" alt="">
+</span> is inside the coma blur. </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_32.jpg" alt="
+   
+    Figure 32 : Standard deviation with third-order coma aberration and a tilting of M2 (C inside the coma blur) 
+   
+  " width="494" height="202"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 32&nbsp;: Standard deviation with third-order coma aberration and a tilting of M2 (C inside the coma blur) 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_32_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">Figure 33 shows the standard deviation and the interferogram obtained when  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_035.png" alt="">
+</span> is moved outside of the meridian plan and outside of the coma blur. </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_33.jpg" alt="
+   
+    Figure 33 : Standard deviation with third-order coma aberration and a tilting of M2 (C outside of the coma blur and the meridian plan) 
+   
+  " width="496" height="202"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 33&nbsp;: Standard deviation with third-order coma aberration and a tilting of M2 (C outside of the coma blur and the meridian plan) 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_33_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+							</div>
+					</div></div><div class=" expUcDiv"><h2 class=" expUcDiv_ti"><span>Interferogram with third-order astigmatic aberration</span></h2><div class=" expUcDiv_co">
+						<div class=" info">
+								
+										<p class="op_txt_p">The astigmatic aberration is also a <span class="op_txt_is_emp">field and aperture aberration</span> that is to say it appears outside the axis for the point. The astigmatic standard deviation is expressed by the following relation [<span class="op_txt_ul_bib tooltip_a" id="i11" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Daniel Malacara&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Optical shop testing&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;&amp;Eacute;ditions Wiley Interscience&lt;\/span&gt;, New York, 1992, 2&amp;egrave;me &amp;Eacute;dition&lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[4]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[4]...">4</span>.<span class="op_txt_ul_bib tooltip_a" id="i12" onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;div class=\&quot; bibTypeBib\&quot;&gt;&lt;div class=\&quot; mDiv\&quot;&gt; &lt;p class=\&quot;op_bibTxt_p\&quot;&gt; &lt;span class=\&quot;op_bibTxt_tl_auth\&quot;&gt;Max Born, Emil Wolf&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_title\&quot;&gt;Principle of Optics, 7&amp;egrave;me Edition&lt;\/span&gt;, &lt;span class=\&quot;op_bibTxt_tl_ed\&quot;&gt;Cambridge University Press&lt;\/span&gt;, Cambridge, &lt;span class=\&quot;op_bibTxt_tl_date\&quot;&gt;1999&lt;\/span&gt;.&lt;\/p&gt; &lt;\/div&gt;&lt;\/div&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;[5]&lt;a title=\&quot;Fermer\&quot; class=\&quot;op_txt_tt_x\&quot; href=\&quot;javascript:void(0);\&quot; onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;op_txt_tt_bib tooltip&quot;,{STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],VPOS:&quot;belowElement&quot;});" title="[5]...">5</span>]: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="235.08485412597656" height="46.03445053100586"><param name="src" value="../res/K_Eq_ext_10.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_10.swf" width="235.08485412597656" height="46.03445053100586"></object></div></div>
+								
+										<p class="op_txt_p">Where <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_036.png" alt="">
+</span> and<span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_037.png" alt="">
+</span> are the tangential and sagittal focus positions in relation to the paraxial focus plan. </p>
+									
+								
+										<p class="op_txt_p">Figure 34 illustrates the wavefront shape and the interferogram with third-order astigmatism when the mirror curvature center is confounded with paraxial image  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_038.png" alt="">
+</span>.</p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_34.jpg" alt="
+   
+    Figure 34 : Standard interval with third-order astigmatic aberration 
+   
+  " width="498" height="455"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 34&nbsp;: Standard interval with third-order astigmatic aberration 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_34_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">In the case where we defocus spherical mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span>, the standard deviation becomes </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><object class=" embedObj" codebase="http://fpdownload.macromedia.com/pub/shockwave/cabs/flash/swflash.cab" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="306.3175354003906" height="46.03445053100586"><param name="src" value="../res/K_Eq_ext_11.swf"><param value="transparent" name="wmode"><embed wmode="transparent" class=" embedObj" pluginspage="http://www.macromedia.com/go/getflash/" type="application/x-shockwave-flash" src="../res/K_Eq_ext_11.swf" width="306.3175354003906" height="46.03445053100586"></object></div></div>
+								
+										<p class="op_txt_p">For <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_039.png" alt="">
+</span>, the curvature center is beyond the paraxial image, the wave surface is toric and the fringes are ellipsis as illustrated in Figure 35: </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_35.jpg" alt="
+   
+    Figure 35 : Standard interval and interferogram for  ε  &lt; 0 
+   
+  " width="499" height="416"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 35&nbsp;: Standard interval and interferogram for  ε  &lt; 0 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_35_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">When  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_040.png" alt="">
+</span>, the wave surface is cylinder-shaped with a vertical axis and the fringes are rectilinear and vertical, mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span> curvature center is on the sagittal focus (Figure 36). </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_36.jpg" alt="
+   
+    Figure 36 : Standard interval and interferogram for ε  = s&#39; 
+   
+  " width="500" height="454"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 36&nbsp;: Standard interval and interferogram for&nbsp;ε  = s' 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_36_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">When <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_041.png" alt="">
+</span>,the wavefront surface is diabolo-like torus and the fringes are in the shape of crosses, then mirror <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span> curvature center is on the circle with a lesser scattering located half way between sagittal and tangential focuses (Figure 37) </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_37.jpg" alt="
+   
+    Figure 37 : Standard interval and interferogram for  ε = (s&#39;+t&#39;)/2 
+   
+  " width="498" height="421"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 37&nbsp;: Standard interval and interferogram for  ε = (s'+t')/2 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_37_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">When <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_042.png" alt="">
+</span>,the wavefront surface is cylinder-like again but with an horizontal axis and the fringes are rectilinear and horizontal, then the mirror  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_028.png" alt="">
+</span> curvature center is on the tangential focus (Figure 38). </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_38.jpg" alt="
+   
+    Figure 38 : Standard interval and interferogram for ε = t&#39; 
+   
+  " width="500" height="454"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 38&nbsp;: Standard interval and interferogram for ε = t' 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_38_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+								
+										<p class="op_txt_p">Then, when  <span class="op_txt_tim_form">
+			<img class="sfile_odf_inline_img " src="./Interferential devices - Twyman-Green Interferometer_files/K_Eq_int_042a.png" alt="">
+</span>, the mirror curvature center is located between the optical system and the tangential focus, the wave surface is toric again and the fringes are elliptical with a major horizontal axis (figure 39). </p>
+									
+								<div class=" resInFlow"><div class=" resInFlow_co"><img src="./Interferential devices - Twyman-Green Interferometer_files/Fig_39.jpg" alt="
+   
+    Figure 39 : Standard interval and interferogram for  ε &gt; t&#39; 
+   
+  " width="499" height="436"></div><div class=" resInFlow_ti"><span>
+			
+				Figure 39&nbsp;: Standard interval and interferogram for  ε &gt; t' 
+			
+		</span><a class=" zoom" href="javascript:window.open(%22../res/Fig_39_1.jpg%22,%22_blank%22,%22width=%22+Math.min(800,screen.availWidth)+%22,height=%22+Math.min(600,screen.availWidth)+%22,left=%22+(screen.availWidth-800)/2+%22,top=%22+(screen.availHeight-600)/2+%22,scrollbars=yes,resizable=yes%22)?void(0):void(0)" title="zoom..."><span>[zoom...]</span></a><span class=" tooltip_a" title="Informations complémentaires..." onclick="scTooltipMgr.showTooltip(this,event,&quot;&lt;span&gt;&lt;p class=\&quot; mField\&quot;&gt;&lt;span class=\&quot;legalInfo\&quot;&gt; &lt;a title=\&quot;Licence : Public Domain Dedication\&quot; class=\&quot;cc-button\&quot; target=\&quot;_blank\&quot; href=\&quot;http:\/\/creativecommons.org\/licenses\/publicdomain\&quot; rel=\&quot;license\&quot;&gt;&lt;img src=\&quot;..\/img\/cc_banners\/publicdomain.png\&quot; height=\&quot;15\&quot; width=\&quot;80\&quot; alt=\&quot;creativecommons : publicdomain\&quot;&gt;&lt;\/a&gt;&lt;\/span&gt;&lt;\/p&gt;&lt;\/span&gt;&quot;,&quot;&lt;span&gt;Informations&lt;a onclick=\&quot;scTooltipMgr.hideTooltip(true)\&quot; href=\&quot;javascript:void(0);\&quot; class=\&quot;tooltip_x\&quot; title=\&quot;Fermer\&quot;&gt;&lt;span&gt;&amp;nbsp;&lt;\/span&gt;&lt;\/a&gt;&lt;\/span&gt;&quot;,&quot;tooltip&quot;,{TEMP:10000,STICKY:true,FIXTYPE:&quot;node&quot;,FIX:[0,0],HPOS:&quot;rightOfElement&quot;,VPOS:&quot;center&quot;,MAXWIDTH:300});"><span class="ttInfo_a"><span>Info</span></span></span></div></div>
+							</div>
+					</div></div></div></div></div></div></div><div id="tplBtm"><span id="tplBtmLeft"><a class=" homeBtn" target="_self" href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/OPI_ang_M02_C05_web.html" title="Accueil"><span>Accueil</span></a></span><span id="tplBtmLeft2"><a class=" toolsBtn" target="_self" href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/OPI_ang_M02_C05_web_2.html" title="Outils transverses"><span>Outils transverses</span></a></span><span id="tplBtmLeft3"><a class=" newBtn" target="_blank" href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Cours_M02C05.html" title="Nouvelle page"><span>Nouvelle page</span></a></span><span id="tplBtma"><span class="authorBtnSel"><a class=" authorBtn" href="javascript:window.open(%22OPI_ang_M02_C05_web_3.html%22,%22_blank%22,%22width=800,height=700%22)?void(0):void(0)" title="Informations sur le cours (ouvrir dans une nouvelle fenêtre)"><span>Informations sur le cours (ouvrir dans une nouvelle fenêtre)</span></a></span></span><span id="tplBtmNavprec"><a class="prevBtn" target="_self" href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Cours_M02C05_10.html" title="Previous (Introduction)"><span>Introduction</span></a></span><span id="tplBtmNavsuiv"><a class="nextBtn" target="_self" href="http://www.optique-ingenieur.org/en/courses/OPI_ang_M02_C05/co/Contenu_32.html" title="Next (Spectrometry by Fourier transform)"><span>Spectrometry by Fourier transform</span></a></span></div></div>
+
+</body></html>

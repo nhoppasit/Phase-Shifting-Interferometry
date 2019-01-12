@@ -1,0 +1,53 @@
+/* General HTML CSS */
+
+
+html{
+	margin: 0px;
+	padding: 0px;	
+	height: 100%;
+}
+
+body{
+	margin: 0px;
+	padding: 0px;
+	height: 90%;
+	/*font: 12px Tahoma, Arial, Sans-serif;*/
+	font: 11px Tahoma;
+}
+
+table{
+	padding: 0px;
+	margin: 0px;
+	border-collapse: collapse; 
+}
+
+h1, h2, h3, h4, h5, h6{
+	padding:0px;
+	margin:0px;
+	font-weight: bold;
+}
+h1{
+	font-size: 1.6em;
+	color: #4463A1;
+}
+h2{
+	font-size:1.5em;
+	color:#7D98CB;
+}
+h3{
+	font-size: 1.4em;
+	color: #9BB0D8;
+}
+h4, h5, h6{
+	font-size: 1.3em;
+	color: #9BB0D8;
+}
+p{
+	text-align: justify;
+	font-size: 1.2em;
+	/* top right bottom left */
+	margin: 0.1em 0.8em 0.5em 0.8em;
+	/*padding: 0.2em 1em 0.7em 1em;*/
+}
+
+

@@ -1,0 +1,135 @@
+/* quiz in trainUc */
+
+.answBest,
+.answGood,
+.answBad {
+	display: block;
+	font-weight: bold;
+	font-size: 1.2em;
+}
+.answBest {
+	color: #00aa00;
+}
+.answGood {
+	color: #ff6600;
+}
+.answBad {
+	color: #ff4a3e; 
+}
+.score {
+	font-weight: bold;
+	margin-top: 0.3em;
+	text-align: center;
+}
+.result{
+	margin-bottom: 0.3em;
+}
+.chExpln,
+.gExpln {
+	margin-left: 0.3em;
+	padding-left: 0.9em;
+	color: #79ACF7;
+	font-style: italic;
+	font-weight: lighter;
+}
+.chExpln .op_txt_oli p,
+.gExpln .op_txt_oli p {
+	color: #79ACF7;
+}
+.bkSolResOut {
+	margin-top: 5px;
+}
+.bkSolResFra1,
+.bkSolResFra2,
+.bkSolResFra3,
+.bkSolResCo {
+	text-align: center;
+	height: 35px;
+	width: 100%;
+}
+.bkSolResFra1 {
+	background: url(../img/quiz/evalBarBkg.png) top repeat-x;
+}
+.bkSolResFra2 {
+	background: url(../img/quiz/evalBarLeft.png) top left no-repeat;
+}
+.bkSolResFra3 {
+	background: url(../img/quiz/evalBarRight.png) top right no-repeat;
+}
+.bkSolResCo {
+	position: relative;
+}
+
+.bkSolResCo .score {
+	position: absolute;
+	top: 0;
+	height: 33px;
+	right: 20px;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.btnQuiz {
+	display: block;
+	position: absolute;
+	top: 0;
+	width: 29px;
+	height: 33px;
+	text-decoration: none;
+}
+.btnQuizCaption {
+	display: none;
+}
+
+.btnScore a {
+	background: url(../img/quiz/score.png) top right no-repeat;
+	left: 20px;
+}
+.btnScore a:hover{
+	background: url(../img/quiz/scoreOver.png) top right no-repeat;
+}
+.btnScore a.toggleButtonOn {
+	background: url(../img/quiz/scoreOn.png) top right no-repeat;
+	left: 20px;
+}
+.btnScore a.toggleButtonOn:hover {
+	background: url(../img/quiz/scoreOnOver.png) top right no-repeat;
+}
+
+.btnSol a {
+	background: url(../img/quiz/sol.png) top right no-repeat;
+	left: 60px;
+}
+.btnSol a:hover {
+	background: url(../img/quiz/solOver.png) top right no-repeat;
+}
+.btnSol a.toggleButtonOn{
+	background: url(../img/quiz/solOn.png) top right no-repeat;
+	left: 60px;
+}
+.btnSol a.toggleButtonOn:hover{
+	background: url(../img/quiz/solOnOver.png) top right no-repeat;
+}
+
+.btnHelp a {
+	background: url(../img/quiz/help.png) top right no-repeat;
+	left: 60px;
+}
+.btnHelp a:hover{
+	background: url(../img/quiz/helpOver.png) top right no-repeat;
+}
+.btnHelp .toggleButtonOn {
+	background: url(../img/quiz/helpOn.png) top right no-repeat;
+	left: 60px;
+}
+.btnHelp a.toggleButtonOn:hover {
+	background: url(../img/quiz/helpOnOver.png) top right no-repeat;
+}
+
+.btnReset a {
+	background: url(../img/quiz/restart.png) top right no-repeat;
+	left: 100px;
+}
+.btnReset a:hover {
+	background: url(../img/quiz/restartOver.png) top right no-repeat;
+}

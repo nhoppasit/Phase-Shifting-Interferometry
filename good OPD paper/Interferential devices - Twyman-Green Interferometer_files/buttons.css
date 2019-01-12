@@ -1,0 +1,191 @@
+
+.homeBtn {
+	background: url(../img/btn/btn-home.gif) no-repeat;
+}
+.homeBtnSel {
+	/*background: url(../img/btn/home3.gif) no-repeat;*/
+}
+a.homeBtn:hover{
+	background: url(../img/btn/btn-home_over.gif) no-repeat;
+}
+.playBtn {
+	background: url(../img/btn/btn-retour-cour.gif) no-repeat;
+}
+.playBtnSel {
+	background: url(../img/btn/retourcours3.gif) no-repeat;
+}
+a.playBtn:hover {
+	background: url(../img/btn/btn-retour-cour_over.gif) no-repeat;
+}
+
+.toolsBtn {
+	background: url(../img/btn/btn-outils.gif) no-repeat;
+}
+.toolsBtnSel {
+	background: url(../img/btn/outils3.gif) no-repeat;
+}
+a.toolsBtn:hover {
+	background: url(../img/btn/btn-outils_over.gif) no-repeat;
+}
+
+.authorBtn {
+	background: url(../img/btn/btn-auteur.gif) no-repeat;
+}
+a.authorBtn:hover {
+	background: url(../img/btn/btn-auteur_over.gif) no-repeat;
+}
+.authorBtnSel {
+	background: url(../img/btn/btn-auteur_select.gif) no-repeat;
+}
+
+/*.helpBtn {
+	background: url(../img/btn/btn-nvelle-page.gif) no-repeat;
+}
+.helpBtnSel {
+	background: url(../img/btn/nvellepage3.gif) no-repeat;
+}
+a.helpBtn:hover {
+	background: url(../img/btn/btn-nvelle-page_over.gif) no-repeat;
+}*/
+.newBtn {
+	background: url(../img/btn/btn-nvlle-page.gif) no-repeat;
+}
+.newBtnSel {
+	background: url(../img/btn/nvllepage3.gif) no-repeat;
+}
+a.newBtn:hover {
+	background: url(../img/btn/btn-nvlle-page_over.gif) no-repeat;
+}
+
+
+.prevBtn {
+	background: url(../img/btn/btn-retour.gif) no-repeat;
+}
+a.prevBtn:hover {
+	background: url(../img/btn/btn-retour_over.gif) no-repeat;
+}
+.nextBtn {
+	background: url(../img/btn/btn-avance.gif) no-repeat;
+}
+a.nextBtn:hover {
+	background: url(../img/btn/btn-avance_over.gif) no-repeat;
+}
+.noPrevBtn, .noNextBtn{
+	/*background: url(../img/btn/emptyRgt.png) no-repeat;*/
+}
+
+.nextH {
+	background: url(../img/btn/btn-entrer.gif) no-repeat;
+}
+a.nextH:hover {
+	background: url(../img/btn/btn-entrer-over.gif) no-repeat;
+}
+
+.prevBtn,
+.nextBtn,
+.nextH,
+.toolsBtn,
+.authorBtn,
+.playBtn,
+.newBtn,
+.playBtnSel,
+.authorBtnSel,
+.toolsBtnSel,
+.noPrevBtn, .noNextBtn {
+	text-decoration: none;
+	height: 60px;
+	width: 30px;
+	display: block;
+}
+
+.helpBtn,
+.newBtn,
+.homeBtn, 
+.authorBtn,
+.newBtn,
+.homeBtnSel,
+.authorBtnSel,
+.helpBtnSel,
+.toolsBtnSel,
+.newBtnSel {
+	text-decoration: none;
+	height: 60px;
+	width: 30px;
+	display: block;
+}
+
+.helpBtn,
+.newBtn,
+.homeBtn,
+.authorBtn,
+.toolsBtnSel,
+.homeBtnSel,
+.authorBtnSel, 
+.newBtnSel {
+	float: left;
+}
+
+
+
+.prevBtn span,
+.nextBtn span,
+.nextH span,
+.helpBtn span,
+.newBtn span,
+.homeBtn span,
+.toolsBtn span,
+.authorBtn span,
+.playBtn span,
+.homeBtnSel span,
+.authorBtnSel span,
+.toolsBtnSel span,
+.playBtnSel span,
+.newBtnSel span{
+	display: none;
+}
+
+
+/*****************/
+/*  Evaluation   */
+/*****************/
+
+.gotoEval{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 1em;
+}
+a.btnEval{
+	background: url(../img/btn/enterM.gif) no-repeat right;
+	height: 33px;
+	display: inline;
+	padding: 10px 35px 10px 0px;
+	margin-right: 35px;
+	color: #4958C2;
+	text-decoration: none;
+}
+a.btnEval:hover{
+	-moz-opacity:0.5;
+	filter:Alpha(opacity=50);
+	opacity:0.5; 
+}
+.btnEval span{
+}
+
+/*****************/
+/* informations */
+/*****************/
+.infoBtn_a {
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: url(../img/blocks/info.png) no-repeat top right;
+	text-decoration: none;
+	height: 33px;
+	width: 33px;
+	display: block;
+	margin: 5px 5px 0px 0px;
+	cursor: pointer;
+}
+.infoBtn_a span {
+	visibility: hidden;
+}

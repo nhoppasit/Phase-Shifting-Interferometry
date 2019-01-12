@@ -1,0 +1,173 @@
+/* Outline Menu CSS */
+
+ul.sw_menu_navList{
+	list-style: none;
+	margin: 0px 0px;
+	padding: 0px 0px 0px 5px;
+}
+ul.sw_menu_navList ul{
+	list-style: none;
+	margin: 2px 0px 0px 0px;
+	padding: 0px 0px 0px 18px;
+}
+ul.sw_menu_navList li{
+	margin: 0px 0px 2px 0px;
+	padding: 0px 0px 0px 0px;
+}
+ul.sw_menu_navList .mnu_sel_yes,
+ul.sw_menu_navList .mnu_sel_no{
+	text-decoration: none;
+	display: block;
+	min-height: 20px;
+	color: black;
+	padding-left: 27px;
+}
+ul.sw_menu_navList .mnu_sel_yes span,
+ul.sw_menu_navList .mnu_sel_no span{
+	display: block;
+	padding: 2px 0px;
+}
+ul.sw_menu_navList a:hover{
+	color: #7D98CB;
+}
+ul.sw_menu_navList .mnu_sel_yes span{
+	display: block;
+	background-color: #7D98CB;
+	color: white;
+	padding-left: 5px;
+	margin-left: -5px;
+	-moz-border-radius:10px
+}
+ul.sw_menu_navList .mnu_intro, ul.sw_menu_navList .mnu_obj {
+	background: url(../img/deco/introMnu.png) no-repeat center left;
+}
+ul.sw_menu_navList .mnu_conclu {
+	background: url(../img/deco/concluMnu.png) no-repeat center left;
+}
+ul.sw_menu_navList .mnu_expUc {
+	background: url(../img/deco/expUcMnu.png) no-repeat center left;
+}
+ul.sw_menu_navList .mnu_practUc {
+	background: url(../img/deco/practUcMnu.png) no-repeat center left;
+}
+ul.sw_menu_navList .mnu_trainUc {
+	background: url(../img/deco/trainUcMnu.png) no-repeat center left;
+}
+ul.sw_menu_navList .mnu_assmntUa {
+	background: url(../img/deco/assmntUaMnu.png) no-repeat center left;
+}
+ul.sw_menu_navList .mnu_quest {
+	background: url(../img/deco/questMnu.png) no-repeat center left;
+}
+ul.sw_menu_navList .mnu_obj {
+	background: url(../img/deco/objPedMnu.png) no-repeat top left;
+}
+ul.sw_menu_navList .mnu_courseUa.mnu_l,
+ul.sw_menu_navList .mnu_ueDiv.mnu_l {
+	background: url(../img/mnu/mnuCl.gif) no-repeat center left;
+}
+ul.sw_menu_navList .mnu_courseUa.mnu_b,
+ul.sw_menu_navList .mnu_ueDiv.mnu_b {
+	background: url(../img/mnu/mnuOp.gif) no-repeat center left;
+}
+ul.sw_menu_navList .mnu_courseUa.mnu_sel_yes,
+ul.sw_menu_navList .mnu_ueDiv.mnu_sel_yes {
+	background: url(../img/mnu/mnuOpDyn.gif) no-repeat center left;
+}
+ul.sw_menu_navList span.mnu_cursor {
+	display: none;
+}
+ul.sw_menu_navList span.mnu_sel_yes span.mnu_cursor {
+}
+
+/* Barres horizontal de scroll */
+.mnuBlock{
+	background: url(../img/mnu/fondBasDroite.png) bottom right no-repeat;
+	position: absolute;
+	width:233px;
+	top:12px;
+	left:0px;
+	bottom:210px;
+}
+
+
+#mnuScroll {
+	position: absolute;
+	width:233px;
+	top:12px;
+	left:0px;
+	bottom:210px;
+	overflow: hidden;
+	padding-right:1px;
+}
+#mnuFrmUp{
+	position: absolute;
+	width: 233px;
+	left: 2px;
+	top:2px;
+	height: 8px;
+	background: url(../img/mnu/top.png) repeat-x;
+}
+#mnuFrmUpLeft{
+	background: url(../img/mnu/topLeft.png) left no-repeat;
+	position: absolute;
+	width: 4px;
+	height: 8px;
+}
+#mnuFrmUpCenter{
+	background: url(../img/mnu/topCenter.png) center center no-repeat;
+	position: absolute;
+	left: 4px;
+	right: 4px;
+	height: 8px;
+}
+#mnuFrmUpRight{
+	background: url(../img/mnu/topRight.png) right no-repeat;
+	position: absolute;
+	right: 0px;
+	width: 4px;
+	height: 8px;
+}
+#mnuBtnUp{
+	position: absolute;
+	width: 230px;
+	height: 8px;
+}
+#mnuFrmDown{
+	position: absolute;
+	width: 233px;
+	left: 2px;
+	bottom: 200px;
+	height: 8px;
+	background: url(../img/mnu/bottom.png) repeat-x;
+}
+#mnuFrmDownLeft{
+	background: url(../img/mnu/bottomLeft.png) no-repeat;
+	position: absolute;
+	width: 4px;
+	height: 8px;
+}
+#mnuFrmDownCenter{
+	position: absolute;
+	left: 4px;
+	right: 4px;
+	height: 8px;
+	background: url(../img/mnu/bottomCenter.png) center center no-repeat;
+}
+#mnuFrmDownRight{
+	background: url(../img/mnu/bottomRight.png) no-repeat;
+	position: absolute;
+	right: 0px;
+	width: 4px;
+	height: 8px;
+}
+#mnuBtnDown{
+	position: absolute;
+	width: 230px;
+	height: 8px;
+}
+#mnuFrmUp.btnOff,
+#mnuFrmDown.btnOff{
+	-moz-opacity:0.3;
+	filter:Alpha(opacity=30);
+	opacity:0.3;}

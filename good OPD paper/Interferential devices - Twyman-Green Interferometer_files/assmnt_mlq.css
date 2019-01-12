@@ -1,0 +1,238 @@
+
+/* ====== MLQ ====== */
+
+
+.op_labelTxt_p {
+	text-align: left;
+}
+
+/* Glisser Deposer */
+
+.mtTable {
+	width:100%;
+	border-collapse: separate;
+	border-spacing:5px;
+}
+.mtTable td {
+	vertical-align: top;
+}
+
+.mtTdBasket {
+	width:30%;
+	padding: 0px;
+	margin: 0px;
+	height:350px;
+}
+.mtTdBasketSol {
+	display: none;
+}
+.mtTdArrow {
+	width: 20px;
+	background-image:url("../img/quiz/dragArrow.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.mtTdSol{
+	width:50%;
+}
+
+.mtTdDropCont {
+	padding: 0px;
+	margin: 0px;
+}
+.mtTdBasket .ddBasket {
+	height:100%;
+}
+.mtTdBasket .ddBasketCatch {
+	height:100%;
+}
+.mtTdHeading {
+	font-weight: bold;
+	text-align: center;
+	font-size: smaller;
+}
+
+
+.olTableSol {
+	width: 100%;
+}
+.olTdSolHead{
+	font-weight: bold;
+	width: 9em;
+	font-size: smaller;
+}
+
+
+.ddBasket{
+	margin-bottom: 5px;
+}
+.ddBasketCatch {
+	border: 1px solid silver;
+}
+.ddBasketCont {
+	padding: 2px;
+}
+.ddBasketSol {
+	display: none;
+}
+
+
+.ddRepArea {
+	margin-bottom:5px;
+}
+.ddDropCatch {
+	border: 1px solid silver;
+}
+.ddDropCont {
+	padding: 2px;
+}
+
+.mtLabel p, .mtLabelSol p {
+	text-indent: 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-size: 1.1em;
+}
+.ddLabel p, .ddLabelSol p {
+	text-indent: 0;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	font-size: 1.1em;
+}
+
+
+
+/*encadré gris des étiquettes */
+.ddLabel {
+	text-align: center;
+	border: 1px solid Gray;
+	background-color: White;
+	padding: 2px;
+	width: 10em;
+	cursor: move;
+	margin: 0.1em 0.1em 0.2em 0.1em;
+	float: left;
+}
+.ddLabelSol {
+	text-align: center;
+	border: 1px solid Gray;
+	background-color: White;
+	padding: 2px;
+	width: 10em;
+	cursor: default;
+	margin: 0.1em 0.1em 0.2em 0.1em;
+	float: left;
+}
+
+
+.mtLabel {
+	float: left;
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid Gray;
+	background-color: white;
+	cursor: move;
+}
+.mtLabel span.myTT_a {
+	cursor: move;
+}
+.mtLabelSol {
+	float: left;
+	padding: 2px;
+	margin: 2px;
+	border: 1px solid Gray;
+	background-color: white;
+	cursor: default;
+}
+.mtLabelSol span.myTT_a {
+	cursor: default;
+}
+
+
+
+/*encadré rose des étiquettes */
+.ddLabelDrag {
+	border: 1px solid #F08080;
+}
+
+.olLabelDrag p {
+	border: 1px solid #F08080;
+}
+
+/* DragOver classes: pour le panier de propositions et pour les réponses */
+
+.ddBasketDragOver,
+.ddCatchDragOver {
+	background-color: white;
+}
+
+/* propositions et réponses */
+.ddBasketCont div.ddLabel,
+.ddDropCont div.ddLabel {
+	float: left;
+}
+
+/* fin du panier */
+.ddBasketEnd,
+.ddCatchDragEnd {
+	clear: both;
+}
+
+/* titres des catégories et des étiquettes  */
+.ddDropTi p, .ddLabel p, .ddLabelSol p {
+	margin: 0px;
+	text-align: center;
+}
+
+
+/* Si le panier de propositions est vide */
+.ddBasketIfEmpty {
+	clear: both;
+	font-style: italic;
+	font-size: 0.9em;
+	color: Gray;
+	text-align: center;
+	padding: 5px 0px;
+}
+
+
+
+/* En gris ... */
+.ddDropTi {
+	font-weight: bold;
+	background-color: #F4F2F5;
+	color: #644156;
+}
+
+.ddDropContIfEmpty {
+	height: 45px;
+	background: url("../img/quiz/drop.gif") no-repeat center;
+}
+.ddDropContIfEmpty span {
+	display: none;
+}
+
+
+/* encadré vert si la réponse est juste */
+.ddLabel_Right,
+.assmntResult_Right {
+	cursor: default;
+	padding: 1px;
+	border: 2px solid #00aa00;
+}
+.ddLabel_Right span.myTT_a,
+.assmntResult_Right span.myTT_a {
+	cursor: default;
+}
+
+/*encadré rouge si la réponse est fausse */
+.ddLabel_Wrong,
+.assmntResult_Wrong {
+	cursor: default;
+	padding: 1px;
+	border: 2px solid #ff4a3e;
+}
+.ddLabel_Wrong span.myTT_a,
+.assmntResult_Wrong span.myTT_a {
+	cursor: default;
+}

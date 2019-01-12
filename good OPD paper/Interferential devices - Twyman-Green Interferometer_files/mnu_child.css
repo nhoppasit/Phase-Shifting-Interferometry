@@ -1,0 +1,103 @@
+/* Outline Child CSS */
+
+ul.sw_child_navList {
+	margin: 0em;
+	padding: 0em;
+	padding-left:10em;
+	list-style: none;
+}
+ul.sw_child_navList li a, ul.sw_child_navList li span{
+	font-size: 1.3em;
+	text-decoration: none;
+	min-height: 35px;
+	display: block;
+	padding-left: 30px;
+	padding-top:5px;
+	cursor: hand;
+	cursor: pointer;
+	color:#5e5e5e;
+}
+ul.sw_child_navList li a:hover span{
+	color: #7e99cc;
+}
+ul.sw_child_navList .mnu_ueDiv {
+	background: url(../img/deco/Nouvelles/SPSession.gif) no-repeat top left;
+}
+ul.sw_child_navList .mnu_assmntUa {
+	background: url(../img/deco/Nouvelles/SPQuestionReponse.gif) no-repeat top left;
+}
+ul.sw_child_navList .mnu_courseUa {
+	background: url(../img/deco/Nouvelles/ULCoursIllustrationMethodo.gif) no-repeat top left;
+}
+ul.sw_child_navList .mnu_intro {
+	background: url(../img/deco/Nouvelles/ULPreambule.gif) no-repeat top left;
+}
+ul.sw_child_navList .mnu_conclu {
+	background: url(../img/deco/Nouvelles/ULSynthese.gif) no-repeat top left;
+}
+ul.sw_child_navList .mnu_expUc {
+	background: url(../img/deco/Nouvelles/ULCoursGeneral.gif) no-repeat top left;
+}
+ul.sw_child_navList .mnu_practUc {
+	background: url(../img/deco/Nouvelles/SPEValuation.gif) no-repeat top left;
+}
+ul.sw_child_navList .mnu_trainUc {
+	background: url(../img/deco/Nouvelles/ULCoursMethodo.gif) no-repeat top left;
+}
+ul.sw_child_navList .mnu_quest {
+	background: url(../img/deco/Nouvelles/ULQuestionReponse.gif) no-repeat top left;
+}
+
+.tabChildH{
+	margin-top:50px
+}
+
+.tabChildH, .tabChildM, .tabChildB{
+	border-collapse: collapse;
+	width:100%;
+}
+
+.childHG, .childHD, .childBG, .childBD{
+	width:100px;
+	height:54px;
+	background-repeat: no-repeat;
+}
+
+.childHG{
+	background-image:url(../img/mnu/childHG.gif);
+	background-position:top right
+}
+
+.childHD{
+	background-image:url(../img/mnu/childHD.gif);
+	background-position:top left
+}
+
+.childBG{
+	background-image:url(../img/mnu/childBG.gif);
+	background-position:bottom right
+}
+
+.childBD{
+	background-image:url(../img/mnu/childBD.gif);
+	background-position:bottom left
+}
+
+.childB{
+	background-image:url(../img/mnu/childB.gif);
+	background-position:bottom;
+	background-repeat: repeat-x
+}
+
+.childH{
+	background-image:url(../img/mnu/childH.gif);
+	background-position:top;
+	background-repeat: repeat-x
+}
+
+.childMD{
+	background-image:url(../img/mnu/childD.gif);
+	background-position:12px;
+	background-repeat: repeat-y;
+	width:100px
+}

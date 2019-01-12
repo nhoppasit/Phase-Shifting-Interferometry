@@ -1,0 +1,88 @@
+/* EDIT */
+
+.tatInput {
+	background-color: #F2FBFA;
+	background: url(../img/quiz/edit.gif) no-repeat;
+	padding: 1px 2px 1px 18px;
+	white-space: pre;
+	border: 1px solid silver;
+	width: 150px;
+	font-weight: bold;
+}
+
+.tatSol {
+	margin: 0px 3px; 
+	border: 2px solid #FF8C00;
+	color: #FF8C00;
+	font-style: italic;
+	padding: 2px;
+	background: White;
+}
+
+.assmntResult_0 input {
+	color: #ff4a3e;
+	border: 2px solid #ff4a3e;
+	text-decoration: line-through blink;
+	cursor: default;
+}
+
+.assmntResult_1 input {
+	color: #00aa00;
+	border: 2px solid #00aa00;
+	cursor: default;
+}
+
+.gapAnswer,
+.exoSol{
+	margin-left: 0.2em;
+	margin-right: 0.5em;
+	font-style: italic;
+	font-weight: bold;
+	color: #FF4500;
+}
+
+.exoAsw {
+	margin-top: 0.5em;
+}
+.exoSol {
+	padding: 0 0 0 0.2em;
+}
+.el_open_exoSol {
+	color: #79ACF7;
+	font-style: normal;
+}
+.ere_cTxt_tl_gap span {
+	padding: 0em 0.3em 0em 0.3em;
+}
+
+.ere_cTxt_tl_gap span input {
+	padding-left: 0.1em;
+}
+
+.exoInput {
+	padding-left: 1em;
+	margin-left: 2em;
+}
+.el_open_exoInput {
+	width: 80%;
+	height: 100px;
+}
+.field_div {
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-top: 0.7em;
+	margin-bottom: 0.3em;
+
+}
+
+.field_child {
+	margin-left: 1.5em;
+}
+
+.field_child .field_div {
+	margin-bottom: 0.1em;
+	font-size: 1.1em;
+	font-style: italic;
+	display: list-item;
+	list-style: disc inside;
+}
